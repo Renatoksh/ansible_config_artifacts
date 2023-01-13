@@ -1,6 +1,0 @@
----
-- hosts: webservers
-  name: Install load balancer
-  roles: 
-    - { role: roles/ApacheRole, when: enable_apache_lb and load_balancer_is_requied }
-    - { role: roles/NginxRole, when: enable_nginx_lb and load_balancer_is_requied }
