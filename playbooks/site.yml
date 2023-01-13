@@ -1,36 +1,6 @@
 ---
--   name: Install mysql on database
-    import_playbook: ../static-assignments/db.yml
-    tags:
-    - database
+- hosts: all
+- import_playbook: ../static-assignments/common.yml
 
--   name: wireshark assignments
-    import_playbook: ../static-assignments/common.yml
-    tags:
-    - wireshark
-    
--   name: Delete wireshark package
-    import_playbook: ../static-assignments/common-del.yml
-    tags:
-    - wiresharkDelete
-
--   name: Import dynamic variables    
-    import_playbook: ../dynamic-assignments/env-vars.yml
-    tags:
-    - dynamic_variable
-
--   name: Webserver assignments 
-    import_playbook: ../static-assignments/webservers.yml
-    tags:
-    - webserver_apache
-
--   name: Install Artifactory
-    import_playbook: ../static-assignments/artifactory.yml
-    tags:
-    - artifactory
-
--   name: phpdepend
-    become: yes
-    import_playbook: ../static-assignments/phpdepend.yml
-    tags:
-    - phpdepend
+- hosts: all
+- import_playbook: ../static-assignments/common.yml
