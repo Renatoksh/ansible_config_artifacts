@@ -1,9 +1,4 @@
 ---
--   name: Install webserver on tooling
-    import_playbook: ../static-assignments/tooling.yml
-    tags:
-    - webserver
-
 -   name: Install mysql on database
     import_playbook: ../static-assignments/db.yml
     tags:
