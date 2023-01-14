@@ -1,2 +1,2 @@
 # ansible_config_artifacts
-Project 12 - Ansible Config Artifact
+Project 12 - Ansible Config Artifacts
